@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Card_border from './Cards/Card_border'
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Initialzing</h1>
+      <Card_border />
     </>
   )
 }
