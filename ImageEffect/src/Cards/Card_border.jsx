@@ -11,7 +11,7 @@ const Card_border = () => {
                         <a href="#" className='inline-block mt-[20px] px-[10px] py-[5px] border-[2px] border-slate-500 rounded-md transition-all duration-500'>Read More</a>
                     </div>
                 </div>
-                <div className='bg-neutral-500 transition-all duration-500'>
+                <div className='bg-neutral-900 transition-all duration-500'>
                     <h2 className='text-slate-50 text-[130px] transition-all duration-500 '>88</h2>
                 </div>
 
