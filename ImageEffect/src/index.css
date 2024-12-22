@@ -45,4 +45,14 @@
     .a_LinkToAnother:hover{
         @apply text-[30px] text-green-100 border-[1px] border-red-400 rounded-[10px] p-[10px] bg-green-800
     }
+    /* =================== in Another Page ===================== */
+    .a_AnotherPage{
+        @apply text-[25px] text-red-200 
+
+    }
+    .a_AnotherPage:hover{
+        @apply text-[30px] text-blue-700 border-[1px] border-yellow-400 rounded-[20px] p-[5px] bg-green-200
+
+    }
+    /* ========================================================= */
 }
