@@ -39,4 +39,10 @@
     .a_Class:hover{
         @apply bg-blue-900 text-yellow-100;
     }
+    .a_LinkToAnother{
+        @apply text-[20px] text-red-800
+    }
+    .a_LinkToAnother:hover{
+        @apply text-[30px] text-green-100 border-[1px] border-red-400 rounded-[10px] p-[10px] bg-green-800
+    }
 }

@@ -24,7 +24,7 @@ const Card_border = () => {
             for pageing (go to another page) */}
 
             <div className ='mt-[30px]'>
-             <a href="Aother_Card">
+             <a href="#" className='a_LinkToAnother'>
                 <Link to="/another">
                 Another Effect
                 </Link>
