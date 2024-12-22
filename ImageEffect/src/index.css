@@ -5,7 +5,7 @@
 
 @layer base{
     .MainBody{
-        @apply h-screen flex justify-center items-center bg-blue-200 m-0;
+        @apply h-screen flex flex-col justify-center items-center bg-blue-200 m-0;
     }
     .Card{
         @apply  relative w-[300px] h-[400px] bg-slate-300 border-green-400 border-[2px] rounded-[10px] transition-all duration-500 hover:shadow-2xl shadow-red-500;

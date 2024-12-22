@@ -1,8 +1,10 @@
 import React from 'react'
 import BaseBall from '/Baseball.png'
+import AnotherPage from './Another_card';
+import {Link} from 'react-router-dom';
 const Card_border = () => {
     return (
-        <div className='MainBody'>
+        <div className='MainBody' id='BaseBall'>
             <div className='Card'>
                 <div className='Face Face1'>
                     <div className='p-[20px] text-center '>
@@ -15,8 +17,18 @@ const Card_border = () => {
                     <img src={BaseBall} alt="BaseBall" width={250} height={250} className='header2'/>
                     {/* <h2 className='header2'>88</h2> */}
                 </div>
+            </div>
+            
+            {/* ==================================== */}
+            {/* we need to install "npm i react-router-dom"
+            for pageing (go to another page) */}
 
-
+            <div className ='mt-[30px]'>
+             <a href="Aother_Card">
+                <Link to="/another">
+                Another Effect
+                </Link>
+            </a>
             </div>
 
         </div>
