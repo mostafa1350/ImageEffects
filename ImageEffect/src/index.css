@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 /* =============================== */
+
+@layer base{
+    .MainBody{
+        @apply h-screen flex justify-center items-center bg-blue-200 m-0;
+    }
+    .Card{
+        @apply  relative w-[300px] h-[400px] bg-slate-300 border-green-400 border-[2px] rounded-[10px] transition-all duration-500 hover:shadow-2xl shadow-red-500;
+    }
+    .Face{
+        @apply absolute flex justify-center items-center top-0 left-0 w-[100%] h-[100%] ;
+    }
+    .Face1{
+        @apply p-[20px] text-center bg-slate-50 text-slate-600 ;
+    }
+    .Face2{
+        @apply bg-slate-700 transition-all duration-500;
+    }
+    .header2{
+        @apply p-[10px] transition-all duration-300;
+    }
+    .Card:hover .Face2{
+        @apply top-[4px] h-[90px] w-[90px] rounded-[50%]
+        left-[50%] translate-x-[-50%]
+        bg-transparent
+        border-solid border-green-800 ;
+
+    }
+    .a_Class{
+        @apply inline-block mt-[20px] px-[10px] py-[5px] border-[2px] border-slate-500 rounded-md transition-all duration-300;
+    }
+
+    .Card:hover .Face2 img{
+        @apply text-[35px] text-blue-600 ;
+    }
+    .a_Class:hover{
+        @apply bg-blue-900 text-yellow-100;
+    }
+}
