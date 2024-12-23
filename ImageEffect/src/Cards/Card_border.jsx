@@ -26,7 +26,7 @@ const Card_border = () => {
             <div className ='mt-[30px]'>
              <a href="#" className='a_LinkToAnother'>
                 <Link to="/another">
-                Another Effect
+                    Another Effect
                 </Link>
             </a>
             </div>
