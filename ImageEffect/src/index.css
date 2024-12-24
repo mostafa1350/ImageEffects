@@ -82,6 +82,9 @@
     .contentBox{
         @apply absolute bottom-0 w-[100%] h-[100px] text-center transition-all duration-500 z-[5] bg-green-400;
     }
+    .HatContainer:hover .contentBox{
+        @apply h-[210px] ;
+    }
     
     /* ========================================================= */
 }
