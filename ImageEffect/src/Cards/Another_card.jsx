@@ -10,8 +10,14 @@ const Another_card = () => {
             <img src={Hat} alt="" width={200} height={200}/>
           </div>
           <div className='contentBox'>
-            <h2></h2>
-            <div className='size'></div>
+            <h2>Hat</h2>
+            <div className='size'>
+              <h1>Size : </h1>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
             <div className='color'></div>
             <div className='flex flex-col justify-center items-center'>
               <a href="" className='a_BuyNow'>

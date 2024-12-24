@@ -67,6 +67,21 @@
         @apply clip-path-mycircle_hover;
 
     }
+    .Hat_Image .ImageBox{
+        @apply absolute w-[100%] h-[220px] top-[50%] z-10 transition duration-500
+    }
+    .ImageBox img{
+        @apply w-[270px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rotate-[-20deg];
+    }
+    .HatContainer:hover .ImageBox{
+        @apply top-0 translate-y-0
+    }
+    .HatContainer::after{
+        @apply content-["Hat"] absolute top-[50%] left-[20%] text-yellow-800 z-[1] text-[30px]
+    }
+    .contentBox{
+        @apply absolute bottom-0 w-[100%] h-[100px] text-center transition-all duration-500 z-[5] bg-green-400;
+    }
     
     /* ========================================================= */
 }
