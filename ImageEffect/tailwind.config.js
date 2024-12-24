@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    clipPath: {
+      mycircle: "circle(150px at 80% 20%)",
+      mycircle_hover : "circle(300px at 80% -20%)",
+  },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 }
