@@ -6,8 +6,8 @@ import HatGolden from '/Hat_golden.png';
 
 const Another_card = () => {
   const [hat, setHat] = useState(HatBrown)
-  function selectHatBrown(hat){
-    setHat(hat);
+  function selectHatBrown(mycolor){
+    setHat(mycolor);
   }
   // useEffect(()=>{
   //   setHat(()=>setHat(hat));
@@ -31,19 +31,20 @@ const Another_card = () => {
             </div>
             <div className='color'>
               <h1>color :</h1>
-              <span onClick={()=>{selectHatBrown(HatBrown)}}>1</span>
-              <span onClick={()=>{selectHatBrown(HatBlue)}}>2</span>
-              <span onClick={()=>{selectHatBrown(HatGolden)}}>3</span>
+              <span onClick={()=>selectHatBrown(HatBrown)}></span>
+              <span onClick={()=>selectHatBrown(HatBlue)}></span>
+              <span onClick={()=>selectHatBrown(HatGolden)}></span>
             </div>
             <div className='flex flex-col justify-center items-center'>
-              <a href="" className='a_BuyNow'>
+              <a href="#" className='a_BuyNow'>
                 Buy Now
               </a>
-              <a href="" className='a_Home'>
+              <a href="#" className='a_Home'>
                 <Link to="/">
                   Home
                 </Link>
               </a>
+
             </div>
 
           </div>
