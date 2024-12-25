@@ -1,13 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import Hat from '/Hat_Brown.png'
+import HatBrown from '/Hat_Brown.png';
+import HatBlue from '/Hat_Blue.png';
+import HatGolden from '/Hat_golden.png';
+
 const Another_card = () => {
+  const hat = HatBrown
+  function selectHatBrown(hat){
+    return hat;
+  }
   return (
     <div className='h-screen flex flex-col justify-center items-center bg-slate-100 m-0 overflow-hidden;'>
       <div className='HatContainer'>
         <div className='Hat_Image'>
           <div className='ImageBox'>
-            <img src={Hat} alt="" width={200} height={200}/>
+            <img src={selectHatBrown(HatBlue)} alt="" width={200} height={200}/>
           </div>
           <div className='contentBox'>
             <h2 className='text-slate-600 text-[30px] space-x-1 font-semibold'>Hat</h2>
@@ -20,9 +27,9 @@ const Another_card = () => {
             </div>
             <div className='color'>
               <h1>color :</h1>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span onClick={selectHatBrown(HatBrown)}>1</span>
+              <span onClick={selectHatBrown(HatBlue)}>2</span>
+              <span onClick={selectHatBrown(HatGolden)}>3</span>
             </div>
             <div className='flex flex-col justify-center items-center'>
               <a href="" className='a_BuyNow'>
