@@ -80,10 +80,26 @@
         @apply content-["Hat"] absolute top-[50%] left-[20%] text-yellow-800 z-[1] text-[30px]
     }
     .contentBox{
-        @apply absolute bottom-0 w-[100%] h-[100px] text-center transition-all duration-500 z-[5] bg-green-400;
+        @apply absolute bottom-0 w-[100%] h-[100px] text-center transition-all duration-500 z-[5];
     }
     .HatContainer:hover .contentBox{
         @apply h-[210px] ;
+    }
+
+    .HatContainer .size,
+    .HatContainer .color{
+        @apply flex space-x-1 justify-center items-center px-[8px] py-[20px] opacity-0 transition duration-500
+    }
+
+    .HatContainer:hover .size{
+        @apply opacity-100 delay-500;
+    }
+    .HatContainer:hover .color{
+        @apply opacity-100 delay-700;
+    }
+
+    .size span{
+        @apply w-[26px] h-[26px] text-[14px] text-slate-900 bg-slate-50 rounded-[4px] mx-0 my-[5px] duration-500 cursor-pointer;
     }
     
     /* ========================================================= */

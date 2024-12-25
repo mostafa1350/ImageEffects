@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     clipPath: {
+      // we need to install "npm install --save-dev tailwind-clip-path"
       mycircle: "circle(150px at 80% 20%)",
       mycircle_hover : "circle(300px at 80% -20%)",
   },

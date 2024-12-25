@@ -10,7 +10,7 @@ const Another_card = () => {
             <img src={Hat} alt="" width={200} height={200}/>
           </div>
           <div className='contentBox'>
-            <h2>Hat</h2>
+            <h2 className='text-slate-600 text-[30px] space-x-1 font-semibold'>Hat</h2>
             <div className='size'>
               <h1>Size : </h1>
               <span>7</span>
@@ -18,7 +18,12 @@ const Another_card = () => {
               <span>9</span>
               <span>10</span>
             </div>
-            <div className='color'></div>
+            <div className='color'>
+              <h1>color :</h1>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <div className='flex flex-col justify-center items-center'>
               <a href="" className='a_BuyNow'>
                 Buy Now
